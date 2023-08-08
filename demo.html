@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html onclick="display(event)">
+<body>
+   <p id="result"></p>
+   <script>
+      function display(event) {
+         let X = event.clientX;
+         let Y = event.clientY;
+         let result = document.getElementById("result");
+         result.innerHTML = "<b>X-coordinate: </b>" + X + "<br><b>Y-coordinate: </b>: " + Y;
+
+         let digitElement = document.createElement("span");
+         digitElement.innerText = "1";
+         digitElement.style.position = "absolute";
+         digitElement.style.left = X + "px";
+         digitElement.style.top = Y + "px";
+
+         document.body.appendChild(digitElement);
+      }
+   </script>
+</body>
+</html>

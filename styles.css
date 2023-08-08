@@ -1,0 +1,178 @@
+body {
+    font-family: JetBrains Mono;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-left: 0; /* Remove left padding for full width */
+    padding-right: 0;
+}
+
+header {
+    background: linear-gradient(45deg, #242424, #454545);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.highlight-text {
+    color: #ffa500; /* Light orange color */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem; /* Add left padding to the navigation items */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-right: 6rem;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 1rem;
+    transition: color 0.7s ease; /* Add a smooth transition on color change */
+    border-bottom: 2px solid transparent;
+    border-bottom-right-radius:1rem;
+}
+
+nav li a:hover {
+    color: #f2b134; /* Change the color on hover */
+    border-bottom-color: #f2b134;
+}
+
+section {
+    padding: 2rem; /* Remove the left padding to center the content within the 20rem padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center section content horizontally */
+    max-width: 600px; /* Limit the width of the section to improve readability */
+    width: 100%;
+}
+
+.bodyy {
+    padding-left: 24rem; /* Set left padding to 20rem using rem units */
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    text-align: center;
+}
+
+.contact-info i {
+    font-size: 18px; /* Change the icon size */
+    margin-right: 5px; /* Add some space between the icon and text */
+    color: #555; /* Change the icon color */
+}
+
+.project {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+
+
+footer {
+    background: linear-gradient(135deg, #242424, #454545);
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1rem; 
+    padding-top: 1rem;
+    width: 100%; /* Set the footer width to take the available space */
+}
+
+#courses {
+    
+}
+
+.course-container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr); /* Three areas in a row */
+    justify-content: center; /* Center the areas horizontally */
+    gap: 20rem;
+}
+
+.course-container {
+    display: flex;
+    gap: 2rem; /* Gap between areas */
+    justify-content: center; /* Center the areas horizontally */
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.course {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 0 50%; /* Set the initial width of the areas */
+    width: 100%; /* Make the areas occupy full width within their container */
+    height: 18rem;
+}
+
+.course img {
+    max-width: 100%;
+    height: auto;
+}
+
+.course a {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.course a:hover {
+    color: orange;
+}
+
+.about-image img,
+.course img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .bodyy {
+        padding-left: 2rem;
+    }
+    
+    nav ul {
+        padding-right: 2rem;
+    }
+    
+    .course-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .course {
+        flex: 1 0 100%;
+        height: auto;
+    }
+}
+
